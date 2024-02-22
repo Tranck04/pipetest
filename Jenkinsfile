@@ -11,6 +11,9 @@ pipeline {
         stage('Deploy to Instance 1') {
             steps {
                 script {
+                    sh 'git log --oneline'  // Print commit log
+                    sh 'ls -al'             // Print directory contents
+                    
                     // Replace 'your-ssh-key' with the path to your private SSH key
                     // Replace 'instance1-ip' with the IP address of your first instance
                     // Replace 'ec2-user' with the username for your instance
@@ -25,6 +28,9 @@ pipeline {
         stage('Deploy to Instance 2') {
             steps {
                 script {
+                    sh 'git log --oneline'  // Print commit log
+                    sh 'ls -al'             // Print directory contents
+                        
                     // Replace 'your-ssh-key' with the path to your private SSH key
                     // Replace 'instance2-ip' with the IP address of your second instance
                     // Replace 'ec2-user' with the username for your instance
