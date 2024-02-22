@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Tranck04/pipetest.git'
+                git clone 'https://github.com/Tranck04/pipetest.git'
             }
         }
 
