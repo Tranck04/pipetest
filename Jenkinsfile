@@ -20,7 +20,7 @@ pipeline {
                     // Replace '/path/to/deployment-directory/' with the path to your deployment directory
                     // Replace 'your-html-repo/index.html' with the path to the index.html file in your repo
 
-                    sh 'scp -i ~/.ssh/authorized_keys https://github.com/Tranck04/pipetest.git/index.html ec2-user@18.208.164.160:/var/www/html/'
+                    sh 'scp -i ~/.ssh/authorized_keys https://github.com/Tranck04/pipetest/blob/main/index.html ec2-user@18.208.164.160:/var/www/html/'
                 }
             }
         }
@@ -37,7 +37,7 @@ pipeline {
                     // Replace '/path/to/deployment-directory/' with the path to your deployment directory
                     // Replace 'your-html-repo/index.html' with the path to the index.html file in your repo
 
-                    sh 'scp -i ~/.ssh/authorized_keys https://github.com/Tranck04/pipetest.git/index.html ec2-user@54.210.130.119:/var/www/html/'
+                    sh 'scp -i ~/.ssh/authorized_keys https://github.com/Tranck04/pipetest/blob/main/index.html ec2-user@54.210.130.119:/var/www/html/'
                 }
             }
         }
