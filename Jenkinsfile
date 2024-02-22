@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git clone 'https://github.com/Tranck04/pipetest.git'
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/Tranck04/pipetest.git']]])
             }
         }
 
